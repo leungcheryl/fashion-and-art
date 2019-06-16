@@ -1,0 +1,229 @@
+
+
+/*  L O O K B O O K  S T Y L E S  */
+
+#lookbook .lookbook-main {
+	background-image: url(../../CherylLeung_ProjectThree/assets/desktop-lookbook-bg3.png);
+	@include full-bg ();
+	margin-bottom: 30px;
+	img {
+		width: 280px;
+		height: auto;
+		position: absolute;
+		left: 15vw;
+		top: 15vh;
+	}
+}
+
+.yeezy-logo {
+	margin: 0 auto;
+	width: 200px;
+}
+
+.row-one {
+	width: 100%;
+	display: flex;
+
+	.big-grid-1 {
+		display: flex;
+		flex-direction: column;
+		align-items: flex-end;
+		width: 33.33%;
+		height: 100%;
+		bottom: 0;
+		.small-img-1 {
+			width: 50%;
+			margin: 10px;
+			height: 100%;
+		}
+		.small-text-1 {
+			width: 50%;
+			margin: 10px;
+			height: 100%;
+			max-height: 300px;
+			overflow: scroll;
+		}
+	}
+	.big-img-2 {
+		width: calc(33.33% - (10px*2));
+		margin: 10px;
+		height: 100%;
+		img {
+			object-fit: cover;
+			width: 100%;
+		}
+	}
+	.small-img-3 {
+		width: 33.33%;
+		display: flex;
+		align-items: flex-end;
+		margin: 10px;
+		img {
+			width: 50%;
+			object-fit: cover;
+		}
+	}
+}
+
+
+.small-text-1 {
+	h4 {
+		font-family: $basefont;
+		text-transform: uppercase;
+		letter-spacing: 2px;
+	} 
+	h2 {
+		@include basefont (16px, 700, 1);
+		text-transform: uppercase;
+	}
+
+	p {
+		@include p-basefont ();
+		line-height: 1.5;
+	}
+}
+
+
+.row-two {
+	width: 100%;
+	display: flex;
+	.big-img-4 {
+		width: calc(33.33% - (10px*2));
+		margin: 10px;
+	}
+
+	.box-contain {
+		width: 33.33%;
+		margin-top: 0;
+		position: relative;
+		.mid-row {
+			display: flex;
+			flex-direction: row;
+			.small-img-5 {	
+				height: 100%;
+				margin: 10px;
+			}
+			.small-img-6 {
+				height: 100%;
+				top: 0;
+				margin: 10px;
+
+			}
+		}
+		.small-img-7 {
+			width: calc(50% - (10px*2));
+			position: absolute;
+			bottom: 0;
+			margin: 10px;
+		}
+	}
+}
+
+.gradient-box {
+	width: 33.33%;
+	background-color: rgba(80, 105, 125, 0.6);
+	margin: 10px;
+}
+
+
+.row-three {
+	width: 100%;
+	display: flex;
+	.small-img-8 {
+		width: calc(33.33% - (10px*2));
+		margin: 10px;
+		display: flex;
+		justify-content: flex-end;
+		img {
+			width: 50%;
+			height: 50%;
+		}
+	}
+
+	.small-img-9 {
+		width: calc((33.33% / 2) - (10px*2));
+		display: flex;
+		align-items: flex-end;
+		margin: 10px;
+		img {
+			width: 100%;
+		}
+	}
+
+	.big-img-10 {
+		margin: 10px;
+		width: calc(33.33% - (10px*2));
+	}
+}
+
+
+
+/*  < 9 4 0 p x - Portrait tablet / small desktops */
+
+@media (max-width: 940px) {
+
+	#lookbook .lookbook-main img {
+		width: 200px;
+		left: 20%;
+		bottom: 0;
+	}
+	
+	.row-one .big-grid-1 {
+		.small-text-1 {
+			max-height: 200px;
+		}	
+	}
+
+
+}
+
+/*  < 7 6 8 p x  - Landscape phone to Portrait Tablet */
+
+@media (max-width: 768px) {
+	#lookbook .lookbook-main img {
+		width: 200px;
+		left: 20%;
+		bottom: 0;
+	}
+
+	.row-one {
+		flex-direction: column;
+		.big-grid-1, .big-img-2, .small-img-3 {
+			width: 100%;
+		}
+	}
+
+	.row-two {
+		flex-direction: column;
+		.big-img-4, .box-contain {
+			width: 100%;
+		}
+	}
+
+	.row-three {
+		flex-direction: column;
+		.small-img-8, .small-img-9, .big-img-10 {
+			width: 100%;
+		}
+	}
+}
+
+/*  < 4 8 0 p x  - Landscape phones and down  */
+
+@media (max-width: 480px) {
+	
+		#lookbook .lookbook-main {
+		background-image: none;
+		background-color: black;
+		height: 100vh;
+		img {
+			width: 250px;
+			left: 15%;
+			bottom: 0;
+			top: 12%;
+
+		}
+	}
+
+}
+

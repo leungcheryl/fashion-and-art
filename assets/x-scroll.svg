@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="10px" height="72px" viewBox="0 0 10 72" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 53 (72520) - https://sketchapp.com -->
+    <title>X Scroll</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Desktop" transform="translate(-506.000000, -640.000000)" fill="#FFFFFF">
+            <g id="X-Scroll" transform="translate(506.000000, 640.000000)">
+                <path d="M4.5,0.5 L4.5,53.984375" id="Line" stroke="#FFFFFF" stroke-linecap="square"></path>
+                <text id="X" font-family="PlayfairDisplay-Bold, Playfair Display" font-size="13" font-weight="bold" letter-spacing="2.44999981">
+                    <tspan x="0" y="72">X</tspan>
+                </text>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,43 @@
+
+@mixin basefont($font-size, $font-weight, $line-height) {
+	font-family: 'Questrial', sans-serif;
+	line-height: $line-height;
+	font-size: $font-size;
+	font-weight: $font-weight;
+}
+
+@mixin p-basefont() {
+	font-family: 'Montserrat', sans-serif;
+	line-height: 2;
+	font-size: 12px;
+	font-weight: 400;
+}
+
+@mixin btn-link($bgcolor, $fontcolor) {
+	padding: 10px 30px;
+	border: 1.5px solid black;
+	border-radius: 3px;
+	color: $fontcolor;
+	background-color: $bgcolor;
+	font-weight: 800;
+	font-family: $basefont;
+	transition: 0.4s all ease;
+	letter-spacing: 1px;
+	font-size: 1rem;
+	text-transform: uppercase;
+
+	&:hover {
+		letter-spacing: 2px;
+		color: grey;
+	}		
+}
+
+@mixin full-bg() {
+	background-size: cover;
+	background-repeat: no-repeat;
+	height: 90vh;
+	width: 100%;
+	overflow: hidden;
+	position: relative;
+	background-attachment: fixed;
+}

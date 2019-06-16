@@ -1,0 +1,456 @@
+
+/*  P O R T F O L I O  S T Y L E S  */
+
+#portfolio .section-one {
+	background-image: url(../../CherylLeung_ProjectThree/assets/desktop-port-bg4.png);
+	@include full-bg();
+	img {
+		width: 250px;
+		height: auto;
+		position: absolute;
+		right: 15vw;
+		top: 5vh;
+	}
+}
+
+#portfolio .section-two {
+	padding: 50px 0;
+	background-color: $primary;
+	margin: 30px 0 60px;
+	display: flex;
+	align-items: center;
+
+	.S2-pic {
+		width: calc(50% - (30px*2));
+		background-color: #D1BCBF;
+		height: 200px;
+		margin: 0 30px;
+	}
+
+	.S2-text {
+		width: calc(50% - (30px*2));
+		height: 340px;
+		margin: 0 30px;
+		
+		h1 {
+			@include basefont(3rem, 800, 1);
+			margin-bottom: 12px;
+		}
+
+		p {
+			@include p-basefont();
+			margin: 0 0 30px 0;
+		}
+
+		a {
+			@include btn-link($primary, $secondary);
+		}
+	}
+	
+}
+
+
+#portfolio .section-three  {
+	display: flex;
+}
+
+.S3-left {
+	width: 50%;
+	background-color: $accent;
+	padding: 30px 0;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+
+.S3-right {
+	width: 50%;
+	height: 50%;
+	margin: auto 0;
+	img {
+		max-width: 100%;
+		height: 100%;
+		object-fit: cover;
+	}
+}
+
+
+
+.icon-text-container {
+	display: flex;
+	margin: 20px;
+	justify-content: flex-end;
+	.S3-icon {
+		width: 10%;
+		margin: 0 10px;
+		i {
+			font-size: 3rem;
+			transition: 0.4s all ease;
+			color: $secondary;
+		}
+		i.fa-facebook-f:hover {
+			color: #3b5998;
+		}
+
+		i.fa-twitter:hover {
+			color: #00aced;
+		}
+
+		i.fa-instagram:hover {
+			color: #8a3ab9;
+		}
+	}
+
+	.S3-text {
+		width: 65%;
+		h2 {
+			@include basefont(16px, 600, 1);
+			margin-top: 0;
+			letter-spacing: 2px;
+		}
+
+		p {
+			@include p-basefont();
+			margin-right: 25px;
+		}
+	}
+}
+
+.section-four .wrapper {
+	margin-top: 50px;
+	margin-bottom: 100px;
+	width: 70%;
+}
+
+
+.pf-header {
+	display: flex;
+	justify-content: space-between;
+	margin-left: 10px;
+
+	.pf-header-left {
+		width: 25%;
+		h1 {
+			@include basefont (3rem, 600, 1);
+		}
+	}
+	.pf-header-right {
+		width: 70%;
+		p {
+			@include p-basefont ();
+		}
+	}
+}
+
+.pf-header-links {
+	width: 75%;
+	display: flex;
+	justify-content: flex-start;
+	flex-wrap: wrap;
+	a {
+		color: $secondary;
+		font-family: $basefont;
+		transition: 0.4s all ease;
+		padding: 3px;
+	}
+
+	& a:hover {
+		color: grey;
+		letter-spacing: 4px;
+	}
+}
+
+.pf-header-links.s5 {
+	width: 40%;
+}
+
+
+.gallery {
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	margin-top: 50px;
+	.column {
+		width: calc(100% / 4);
+		display: flex;
+		flex-direction: column;
+		margin: 10px;
+		.img {
+			width: 100%;
+			height: 30%;
+			margin-bottom: 10px;
+			position: relative;
+			background-color: white;
+			transition: transform .5s;
+			img {
+				max-height: 100%;
+				max-width: 100%;
+				object-fit: cover;
+				height: 100%;
+			}
+		}
+	}
+}
+
+.img-overlay {
+	position: absolute;
+	background: rgba(255,255,255,0.7);
+	top: 0;
+	bottom:0;
+	left:0;
+	right:0;
+}
+
+.img-overlay.lite {
+	display: none;
+	background: rgba(255,255,255,0.2);
+}
+
+.img:hover .img-overlay.lite {
+	display: block;
+}
+
+.img:hover .img-overlay {
+	display: none;
+}
+
+.img:hover {
+	transform: scale(1.2);
+	z-index: 100;
+	border: 8px solid white;
+}
+
+
+.column.one {
+	margin-bottom: 10%;
+}
+
+.column.two {
+	margin-bottom: 5%;
+
+	.img.four, .img.six {
+		height: 30%;
+	}
+
+	.img.five {
+		height: 40%;
+	}
+
+}
+
+.column.three {
+	margin-bottom: 5%;
+}
+
+.button {
+	text-align: center;
+	a {
+	@include btn-link($primary, $secondary);
+	}
+}
+
+.brands-container {
+	display: flex;
+	width: 95%;
+	margin: 0 auto;
+	justify-content: space-between;
+	.brand-logo {
+		display: flex;
+		margin: 0 3%;
+		justify-content: center;
+		img {
+			width: 60%;
+			height: 100%;
+			display: block;
+		}
+	}
+}
+
+.section-five {
+	background-color: #F6F6F6;
+	padding-top: 50px;
+}
+
+.S5-container, .S7-container {
+	padding: 40px 0;
+	display: flex;
+	.S5-grid, .S7-grid {
+		display: flex;
+		flex-direction: column;
+		margin: 10px;
+		img {
+			height: 100%;
+		}
+		h4 {
+			@include basefont (1.5rem, 600, 1.5);
+			letter-spacing: 1px;
+			margin-bottom: 0px;
+		}
+	}
+}
+
+.S7-grid p, .S5-grid p {
+	@include p-basefont ();
+	margin-top: 3px;
+
+	a {
+		color: grey;
+		@include p-basefont ();
+		letter-spacing: 0;
+		text-transform: capitalize;
+		transition: 0.5s all ease;
+
+		&:hover {
+			color: white;
+			letter-spacing: 1.5;
+		}
+	}
+}
+
+.section-six {
+	padding: 60px 0;
+	background-color: #D1BCBF;
+}
+ 
+.section-seven {
+	padding: 60px 0;
+}
+
+.button.s7 {
+	text-align: center;
+	a {
+	@include btn-link($secondary, $primary);
+	}
+}
+
+.s7-img {
+	position: relative;
+	.overlay {
+		position: absolute;
+		top: 5%;
+		left: 5%;
+		background-color: white;
+		width: 40px;
+		height: 40px;
+		box-shadow: 3px 3px 15px grey;
+		h4 {
+			text-align: center;
+			margin: 0;
+			@include basefont(13px, 600, 1.2);
+			padding: 5px;
+			text-transform: uppercase;
+		}
+	}
+}
+
+/*  M E D I A  Q U E R I E S  */
+
+/*  < 9 4 0 p x - Portrait tablet / small desktops */
+
+@media (max-width: 940px) {
+
+	#portfolio .section-one img {
+		width: 200px;
+	}
+
+	#portfolio .section-two {
+		flex-direction: column;
+		.S2-pic {
+			width: 100%;
+		}
+		.S2-text {
+			width: 100%;
+		}
+	}
+
+	#portfolio .S3-right {
+		height: 50%;
+		margin: auto 0;
+	} 
+
+	.S7-container, .S5-container {
+		flex-wrap: wrap;
+	}
+	.S7-grid, .S5-grid {
+		flex: 1 0 40%;
+	}
+	
+}
+
+
+/*  < 7 6 8 p x  - Landscape phone to Portrait Tablet */
+
+
+@media (max-width: 768px) {
+
+	.S2-text h1 {
+		padding-top: 50px;
+	}
+
+	#portfolio .section-three {
+		flex-direction: column;
+		.S3-left {
+			width: 100%;
+			.icon-text-container {
+				justify-content: center;
+			}
+		}
+
+		.S3-right {
+			margin: 0 auto;
+			overflow: hidden;
+			padding-top: 4%;
+		}
+	}
+
+	.pf-header {
+		flex-direction: column;
+		.pf-header-left {
+			width: 100%;
+		}
+		.pf-header-right {
+			width: 100%;
+		}
+		.pf-header-links {
+			width: 100%;
+		}
+	}
+
+	
+}
+
+/*  < 4 8 0 p x  - Landscape phones and down  */
+
+@media (max-width: 480px) {
+
+	#portfolio .section-one {
+		background-image: none;
+		background-color: black;
+		height: 100vh;
+		img {
+			width: 250px;
+			left: 15%;
+			bottom: 0;
+			top: 12%;
+		}
+	}
+
+	.S2-text h1 {
+		padding-top: 0;
+	}
+
+	#portfolio .section-three {
+		.S3-right {
+			display: none;
+		}
+	}
+
+	.S5-container, .S7-container {
+		flex-direction: column;
+	}
+	
+
+
+}
+

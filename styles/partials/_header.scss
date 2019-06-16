@@ -1,0 +1,171 @@
+
+/*  H E A D E R  S T Y L E S  */
+
+#lookbook .header-nav,
+#portfolio .header-nav,
+#inspiration .header-nav {
+	background-color: $secondary;
+}
+
+header {
+	background-color: $secondary;
+}
+
+.references-link-two {
+	display: none;
+}
+input[type="checkbox"], label {
+	display: none;
+}
+
+.header-nav nav {
+	display: flex;
+	justify-content: flex-end;
+	margin-right: 50px;
+}
+
+.header-nav ul {
+	display: flex;
+	width: 50%;
+	justify-content: space-between;
+		li {
+			list-style: none;
+			margin: 10px;
+			display: flex;
+			a {
+				flex-direction: column;
+				padding-bottom: 5px;
+				transition: 0.5s all ease;
+				font-family: $basefont;
+			}
+		}
+}
+
+
+.menu-text, .references-link {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	height: 40px;
+}
+
+
+img.vertical-line {
+	width: 2px;
+	display: none;
+	transition: 0.5s all ease;
+}
+
+.header-nav li:hover img.vertical-line, .references-link .vertical-line {
+	display: block;                      
+}
+
+.header-nav li a:hover, .references-link a:hover, .references-link-two a:hover {
+	font-weight: 600;
+	letter-spacing: 4px;
+}
+
+/*  M E D I A  Q U E R I E S  */
+
+/*  < 9 4 0 p x - Portrait tablet / small desktops */
+
+@media (max-width: 940px) {
+	.header-nav nav {
+		justify-content: center;
+		
+	}
+
+	.header-nav ul {
+		width: 70%;
+		background-color: transparent;
+	}
+	
+}
+
+/*  < 7 6 8 p x  - Landscape phone to Portrait Tablet */
+
+
+@media (max-width: 768px) {
+
+}
+
+/*  < 4 8 0 p x  - Landscape phones and down  */
+
+@media (max-width: 480px) {
+
+
+	.wrapper-head {
+		position: relative;
+		left: 0;
+		transition: 0.5s all ease;
+		background: $secondary;
+	}
+
+	.header-nav {
+		top: 50px;
+		right: -30%;
+		width: 30%;
+		transition: 0.5s all ease;
+		z-index: 50;
+		position: absolute;
+		ul {
+			flex-direction: column;
+			li {
+				margin-left: 0;
+				a {
+					font-size: 10px;
+					transition: all 0.5s;
+				}
+
+			}
+
+			
+		}
+	}
+
+
+
+	input, label {
+		display: block;
+	}
+	
+
+	input[type="checkbox"]:checked + .header-nav {
+		right: 10%;
+	}	
+
+	input[type="checkbox"]:checked ~ .wrapper-head {
+		left: -35%;  
+	}
+
+	input[type="checkbox"] {
+		display: none;
+	}
+ 
+	label[for="toggle"] {
+		position: absolute;
+		top: 10px;
+		right: 0px;
+		color: white;
+		z-index: 20;
+		font-size: 25px;
+		padding-right: 20px;
+	}
+
+	.references-link-two {
+		display: block;
+}
+	.references-link-two img.vertical-line {
+		width: 2px;
+		display: none;
+		transition: 0.5s all ease;
+	}
+
+	.references-link-two {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		height: 40px;
+	}
+
+}
