@@ -1406,6 +1406,7 @@ img.x-scroll {
   padding-bottom: 20px; }
 
 .index-main {
+  background-color: #000000;
   overflow: hidden;
   z-index: 5;
   display: block;
