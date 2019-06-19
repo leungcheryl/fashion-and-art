@@ -155,7 +155,7 @@ img.vertical-line {
 
 /*  L O O K B O O K  S T Y L E S  */
 #lookbook .lookbook-main {
-  background-image: url(../../assets/desktop-lookbook-bg3.png);
+  background-image: url(../assets/desktop-lookbook-bg3.png);
   background-size: cover;
   background-repeat: no-repeat;
   height: 90vh;
@@ -366,7 +366,7 @@ img.vertical-line {
 
 /*  P O R T F O L I O  S T Y L E S  */
 #portfolio .section-one {
-  background-image: url(../../assets/desktop-port-bg4.png);
+  background-image: url(../assets/desktop-port-bg4.png);
   background-size: cover;
   background-repeat: no-repeat;
   height: 90vh;
