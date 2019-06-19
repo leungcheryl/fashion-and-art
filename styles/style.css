@@ -155,7 +155,7 @@ img.vertical-line {
 
 /*  L O O K B O O K  S T Y L E S  */
 #lookbook .lookbook-main {
-  background-image: url(../../CherylLeung_ProjectThree/assets/desktop-lookbook-bg3.png);
+  background-image: url(../../assets/desktop-lookbook-bg3.png);
   background-size: cover;
   background-repeat: no-repeat;
   height: 90vh;
@@ -366,7 +366,7 @@ img.vertical-line {
 
 /*  P O R T F O L I O  S T Y L E S  */
 #portfolio .section-one {
-  background-image: url(../../CherylLeung_ProjectThree/assets/desktop-port-bg4.png);
+  background-image: url(../../assets/desktop-port-bg4.png);
   background-size: cover;
   background-repeat: no-repeat;
   height: 90vh;
@@ -611,7 +611,7 @@ img.vertical-line {
   -ms-transform: scale(1.2);
   transform: scale(1.2);
   z-index: 100;
-  border: 8px solid black; }
+  border: 8px solid white; }
 
 .column.one {
   margin-bottom: 10%; }
@@ -714,7 +714,7 @@ img.vertical-line {
     -o-transition: 0.5s all ease;
     transition: 0.5s all ease; }
     .S7-grid p a:hover, .S5-grid p a:hover {
-      color: black;
+      color: white;
       letter-spacing: 1.5; }
 
 .section-six {
@@ -1362,7 +1362,7 @@ a {
   width: 80%; }
 
 .index-header {
-  background-image: url(../../CherylLeung_ProjectThree/assets/flower-bg.jpg);
+  background-image: url(../assets/flower-bg.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   height: 90vh;
@@ -1371,7 +1371,8 @@ a {
   position: relative;
   background-attachment: fixed;
   height: 100vh;
-  position: fixed; }
+  position: fixed;
+  z-index: 99999; }
 
 .header-logo {
   position: absolute;
@@ -1405,7 +1406,6 @@ img.x-scroll {
   padding-bottom: 20px; }
 
 .index-main {
-  background-color: #000000;
   overflow: hidden;
   z-index: 5;
   display: block;
@@ -1462,8 +1462,7 @@ body {
   .header-logo {
     left: 20%; }
   .index-header {
-    background-image: none;
-    background-color: black; }
+    background-image: none; }
     .index-header img {
       width: 250px;
       left: 20%;
