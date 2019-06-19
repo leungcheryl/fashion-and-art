@@ -63,7 +63,6 @@ a {
 	@include full-bg();
 	height: 100vh;
 	position: fixed;
-	z-index: 99999;
 }
 
 .header-logo {
@@ -99,7 +98,6 @@ img.x-scroll {
 
 .index-main {
 	background-color:#000000;
-	overflow: hidden;
 	z-index: 5;
 	display: block;
 	top: 100vh;

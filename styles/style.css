@@ -1371,8 +1371,7 @@ a {
   position: relative;
   background-attachment: fixed;
   height: 100vh;
-  position: fixed;
-  z-index: 99999; }
+  position: fixed; }
 
 .header-logo {
   position: absolute;
@@ -1407,7 +1406,6 @@ img.x-scroll {
 
 .index-main {
   background-color: #000000;
-  overflow: hidden;
   z-index: 5;
   display: block;
   top: 100vh;
